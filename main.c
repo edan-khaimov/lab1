@@ -143,6 +143,7 @@ int main()
                 freeMatrix(firstMat);
                 freeMatrix(resMat);
                 free(firstMatElems);
+                break;cd
             default:
                 fprintf(stderr, "Unknown command\n");
                 break;
