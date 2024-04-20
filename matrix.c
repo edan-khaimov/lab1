@@ -155,7 +155,7 @@ Matrix *transposeMat(Matrix *mat)
     {
         for (size_t j = 0; j < mat->rows; j++)
         {
-            void *transElem = (char *)mat->elems + j * rows * elemSize + i * elemSize;
+            void *transElem = mat->elems + j * rows * elemSize + i * elemSize;
             setToMatrix(transMat, i, j, transElem);
         }
     }
