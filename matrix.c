@@ -151,9 +151,9 @@ Matrix *transposeMat(Matrix *mat)
     size_t rows = mat->columns;
     size_t elemSize = mat->typeInfo->elemSize;
     Matrix *transMat = createZeroMatrix(rows, columns, mat->typeInfo);
-    for (size_t i = 0; i < mat->columns; i++)
+    for (size_t i = 0; i < rows; i++)
     {
-        for (size_t j = 0; j < mat->rows; j++)
+        for (size_t j = 0; j < columns; j++)
         {
             void *transElem = mat->elems + j * rows * elemSize + i * elemSize;
             setToMatrix(transMat, i, j, transElem);
