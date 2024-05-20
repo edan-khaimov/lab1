@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <assert.h>
 #include "testComplexMatrixOperations.h"
 #include "complex.h"
